@@ -102,3 +102,7 @@ As logomarcas do iTec, da FURG e da EMBRAPII pertencem às respectivas institui�
 
 - ABNT NBR 10719:2015, Informação e documentação, Relatório técnico e/ou científico, Apresentação.
 - ABNT NBR ISO 16290:2015, Sistemas espaciais, Definição dos níveis de maturidade da tecnologia (TRL) e de seus critérios de avaliação.
+
+## Licença
+
+[MIT](LICENSE). A licença cobre o código do modelo, não as logomarcas.

@@ -1,0 +1,85 @@
+% =====================================================================
+% RELATÓRIO DE MACROENTREGA, projetos EMBRAPII
+% Modelo para macroentrega intermediária, inclusive a primeira.
+% Para o relatório final, use main-final.tex.
+%
+% Compilar:    make               (ou: latexmk -pdf main.tex)
+% Conferir:    make verificar     (log, marcadores, resumo, requisitos)
+% Entregar:    make entrega       (marcador pendente vira erro)
+%
+% Antes de escrever, abra o Anexo I do contrato e copie a descrição
+% literal da macroentrega. Ela é o critério de aceite e vai na caixa de
+% transcrição da Introdução.
+% =====================================================================
+\documentclass[rascunho]{macroentrega}
+
+% Logomarcas do cabeçalho, da esquerda para a direita (de uma a quatro).
+% O logo do parceiro entra quando o contrato previr.
+\setlogos{LOGO/itec_logo.png,LOGO/furg_logo.png,LOGO/embrapii_logo.png}
+
+% ---------------------------------------------------------------------
+% DADOS DA CAPA E DA PÁGINA DE ASSINATURAS
+% Número e título da macroentrega idênticos aos do SRInfo e do Anexo I.
+% Quebre o subtítulo à mão, com linhas de tamanho parecido.
+% Campos opcionais: codigo, subtitulo, deliverable, wp, parceiro,
+% confidencialidade, codigorelatorio. Apague a linha para ocultar.
+% Valor que contém vírgula vai entre chaves: titulo = {A, B}.
+% ---------------------------------------------------------------------
+\dadosrelatorio{
+  tipo              = intermediaria,
+  numero            = \ph{NN},
+  projeto           = \ph{NOME DO PROJETO},
+  codigo            = \ph{número no contrato e no Sisproj},
+  subtitulo         = \ph{Primeira linha do subtítulo}\\\ph{segunda linha equilibrada},
+  titulo            = \ph{título da macroentrega, como no SRInfo},
+  deliverable       = \ph{DN},
+  wp                = \ph{WPn},
+  parceiro          = \ph{razão social do parceiro tecnológico},
+  equipe            = {\ph{Nome Sobrenome},\ph{Nome Sobrenome},
+                       \ph{Nome Sobrenome},\ph{Nome Sobrenome}},
+  unidade           = {Unidade EMBRAPII iTec/FURG},
+  local             = \ph{Cidade},
+  data              = \ph{Mês de AAAA},
+  % confidencialidade = {CONFIDENCIAL},
+  % codigorelatorio   = {SIGLA-RMA-AAAA-NN},
+  coordenador       = \ph{Nome do Coordenador},
+  razaosocial       = \ph{RAZÃO SOCIAL},
+  representante     = \ph{Nome do Representante},
+  cargorepresentante= \ph{Cargo},
+  dataassinatura    = \ph{DD de mês de AAAA},
+}
+
+\begin{document}
+
+\capa
+\include{capitulos/00_resumo}
+\tableofcontents
+
+% Opcionais, úteis a partir de umas cem páginas:
+% \listoffigures
+% \listoftables
+% \begin{siglas}
+%   \item[ROS] \textit{Robot Operating System}.
+% \end{siglas}
+
+% ---------------------------------------------------------------------
+% CAPÍTULOS: um arquivo por capítulo, numerado de dez em dez.
+% Para acrescentar uma frente, copie 30_frente_1.tex para 40_frente_2.tex.
+% Ao remover um capítulo, não renumere os demais arquivos.
+% ---------------------------------------------------------------------
+\include{capitulos/10_introducao}
+\include{capitulos/20_requisitos}
+\include{capitulos/30_frente_1}
+% \include{capitulos/40_frente_2}
+% \include{capitulos/50_resultados_consolidados}
+\include{capitulos/60_discussao_limitacoes}
+\include{capitulos/70_consideracoes_finais}
+
+\referencias{referencias}
+
+\appendix
+\include{capitulos/90_anexos}
+
+\paginaassinaturas
+
+\end{document}

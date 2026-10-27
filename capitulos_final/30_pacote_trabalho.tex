@@ -1,0 +1,78 @@
+\chapter{\ph{Nome do pacote de trabalho}}
+\label{chap:wp1}
+
+\orientacao{Um capítulo por pacote de trabalho (WP), ou por módulo do sistema quando o produto é um sistema único cujas partes se integram. Se as frentes tiveram equipes e métodos distintos, organize por pacote, porque o leitor procura pela frente.
+
+Cada capítulo recompõe a frente inteira a partir do estado final do conhecimento. O resultado que foi superado aparece como etapa do percurso, não como resultado, e o experimento que fracassou aparece na discussão, não na seção de resultados.
+
+Para o documento servir à transferência de tecnologia, algum capítulo precisa conter: lista de componentes de hardware com a função de cada um, passo a passo de montagem (quando há protótipo físico), pacotes de software com a função e a forma de comunicação, formato, volume e organização dos dados, procedimento de operação e parâmetros dos experimentos, em tabela, com unidade.}
+
+\section{Introdução}
+
+\ph{O que esta frente desenvolveu ao longo do projeto e como se liga às demais.}
+
+\section{Objetivos}
+
+\ph{Objetivos do pacote de trabalho, recortados dos objetivos específicos do projeto.}
+
+\section{Arquitetura}
+
+\ph{Arquitetura da solução, com a figura que a representa. Diagrama mostra intenção de projeto, não funcionamento.}
+
+\section{Hardware}
+\label{sec:wp1_hardware}
+
+\ph{Componentes de hardware e a função de cada um; passo a passo de montagem.} A Tabela~\ref{tab:componentes} lista os componentes.
+
+{\estilotabela
+\begin{longtable}{|P{3.4cm}|P{3.8cm}|P{3.1cm}|P{3.1cm}|}
+\caption{Componentes de hardware.}\label{tab:componentes}\\
+\hline
+\rowcolor{reqcolor}\cab{Componente} & \cab{Função} & \cab{Especificação} & \cab{Fornecedor} \\ \hline
+\endfirsthead
+\hline
+\rowcolor{reqcolor}\cab{Componente} & \cab{Função} & \cab{Especificação} & \cab{Fornecedor} \\ \hline
+\endhead
+\ph{componente} & \ph{função} & \ph{valor} & \ph{fornecedor} \\ \hline
+\rowcolor{reqlight}\ph{componente} & \ph{função} & \ph{valor} & \ph{fornecedor} \\ \hline
+\end{longtable}}
+
+\section{Software}
+
+\ph{Pacotes de software, a função de cada um e como se comunicam.}
+
+\subsection{Dados Produzidos}
+
+\ph{Formato, volume e organização dos dados.} O dicionário de dados completo consta no Anexo~\ref{anx:b}.
+
+\subsection{Procedimento de Operação}
+
+\ph{Como operar o sistema, em passos que o parceiro possa seguir.}
+
+\section{Resultados}
+\label{sec:wp1_resultados}
+
+\ph{Resultados do pacote, com condição de medida para cada número.} A Figura~\ref{fig:wp1} e a Tabela~\ref{tab:wp1_resultados} apresentam \ph{o que o leitor deve observar}.
+
+\begin{figure}[htbp]
+\centering
+\figuraph[4.5cm]{figura}
+\caption{\ph{Legenda que diz o que a figura mostra.}}
+\label{fig:wp1}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{\ph{Resultados por condição de ensaio.}}
+\label{tab:wp1_resultados}
+\estilotabela
+\begin{tabularx}{\linewidth}{|P{3.6cm}|C{2.6cm}|C{2.6cm}|X|}
+\hline
+\rowcolor{reqcolor}\cab{Condição} & \cab{Ensaios} & \cab{Resultado} & \cab{Observação} \\ \hline
+\ph{condição} & \ph{n} & \ph{valor, unidade} & \ph{nota} \\ \hline
+\end{tabularx}
+\end{table}
+
+\section{Discussão}
+
+\ph{O que o resultado significa, sob quais condições vale e o que não demonstra.}

@@ -1,0 +1,87 @@
+\chapter{\ph{Nome da frente ou do eixo}}
+\label{chap:frente1}
+
+\orientacao{Um capítulo por frente de trabalho, ou por eixo quando a entrega atravessa frentes. Copie este arquivo para cada frente nova e mantenha a mesma estrutura em todas: reduz a variação entre capítulos escritos por pessoas diferentes.
+
+Regras para o capítulo técnico:
+\begin{itemize}
+    \item Descreva o que existe, não o que se pretendia. Passado para o trabalho realizado, presente para o sistema como ele é.
+    \item Decisão de projeto vem com o motivo (``optou-se por X porque Y''). Comparação de alternativas é conteúdo legítimo.
+    \item Toda afirmação de desempenho vem com a condição de medida: quantos ensaios, em que cena, com que objeto, sob que parâmetros.
+    \item Resultado negativo se escreve como resultado, com a causa. Falha é informação técnica de valor.
+    \item Apresente o dado antes de interpretá-lo, para que o leitor possa discordar da interpretação sem descartar o dado.
+    \item Componente usado por mais de uma frente é descrito uma vez e referenciado depois.
+\end{itemize}
+
+Na primeira macroentrega, um dos capítulos técnicos traz a prova de conceito que sustenta o TRL declarado: o que foi montado ou implementado, em que condição foi testado e o que se observou. Prova de conceito em simulação serve, desde que traga figura, dado e condição experimental declarada.}
+
+\section{Introdução}
+\label{sec:frente1_intro}
+
+\ph{O que esta frente entrega nesta macroentrega e qual objetivo da macroentrega ela atende.}
+
+\section{Objetivos da Frente nesta Entrega}
+
+\ph{Objetivos da frente, no infinitivo, recortados dos objetivos da macroentrega.}
+
+\section{Metodologia e Desenvolvimento}
+\label{sec:frente1_metodologia}
+
+\ph{O que foi feito e como, no passado; o sistema como ele é, no presente. Cada decisão de projeto com o motivo.}
+
+\section{Setup Experimental}
+\label{sec:frente1_setup}
+
+\ph{Ambiente, equipamentos, parâmetros e procedimento, em detalhe suficiente para reproduzir o ensaio.} Os parâmetros constam na Tabela~\ref{tab:parametros}.
+
+\begin{table}[htbp]
+\centering
+\caption{\ph{Parâmetros do ensaio, com unidade.}}
+\label{tab:parametros}
+\estilotabela
+\begin{tabularx}{\linewidth}{|P{4cm}|C{3cm}|X|}
+\hline
+\rowcolor{reqcolor}\cab{Parâmetro} & \cab{Valor} & \cab{Observação} \\ \hline
+\ph{parâmetro} & \ph{valor e unidade} & \ph{condição} \\ \hline
+\rowcolor{reqlight}\ph{parâmetro} & \ph{valor e unidade} & \ph{condição} \\ \hline
+\end{tabularx}
+\end{table}
+
+\section{Resultados}
+\label{sec:frente1_resultados}
+
+\orientacao{Evidência forte: figura do artefato operando no ambiente descrito, tabela de resultados com condição experimental declarada, gráfico de erro ou de trajetória, registro de execução com data e local, parâmetros que permitam reproduzir o experimento. Diagrama de arquitetura e captura de tela mostram intenção ou existência, não funcionamento.
+
+Cada objetivo da macroentrega precisa apontar para ao menos uma evidência forte. Se só houver evidência fraca, o texto diz que o objetivo foi cumprido em parte.
+
+Figuras: vetoriais (PDF) sempre que possível, com rótulos legíveis no tamanho impresso, sem moldura nem título de slide. Toda figura e toda tabela é chamada no texto antes de aparecer, e a chamada diz o que observar. A legenda diz o que a figura mostra e não repete o título da seção.}
+
+A Figura~\ref{fig:exemplo} apresenta \ph{o que a figura mostra e o que o leitor deve observar nela}.
+
+\begin{figure}[htbp]
+\centering
+% Figura real: \includegraphics[width=\linewidth]{IMAGES/nome_da_figura.pdf}
+\figuraph[5cm]{figura}
+\caption{\ph{Legenda que diz o que a figura mostra, com a condição do ensaio.}}
+\label{fig:exemplo}
+\end{figure}
+
+A Tabela~\ref{tab:exemplo} resume \ph{os resultados e a condição em que foram obtidos}.
+
+\begin{table}[htbp]
+\centering
+\caption{\ph{Resultados por condição de ensaio.}}
+\label{tab:exemplo}
+\estilotabela
+\begin{tabularx}{\linewidth}{|P{3.6cm}|C{2.6cm}|C{2.6cm}|X|}
+\hline
+\rowcolor{reqcolor}\cab{Condição} & \cab{Ensaios} & \cab{Resultado} & \cab{Observação} \\ \hline
+\ph{condição} & \ph{n} & \ph{valor, unidade} & \ph{nota} \\ \hline
+\rowcolor{reqlight}\ph{condição} & \ph{n} & \ph{valor, unidade} & \ph{nota} \\ \hline
+\end{tabularx}
+\end{table}
+
+\section{Discussão}
+\label{sec:frente1_discussao}
+
+\ph{O que o resultado desta frente significa, sob quais condições vale e o que ele não demonstra.}

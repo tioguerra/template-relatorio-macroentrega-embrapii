@@ -1,0 +1,70 @@
+% =====================================================================
+% RELATÓRIO FINAL, projetos EMBRAPII
+% Modelo para o relatório da última macroentrega.
+% Para macroentrega intermediária, use main.tex.
+%
+% O relatório final é autossuficiente e serve de documento de
+% transferência: quem o ler daqui a dois anos, sem acesso a mais nada,
+% deve conseguir entender o projeto e continuar o trabalho. Reescreva cada
+% capítulo a partir do estado final do conhecimento, usando os relatórios
+% anteriores como fonte. Não cole relatórios intermediários em sequência.
+%
+% Compilar:    make final
+% Conferir:    make verificar-final
+% Entregar:    make entrega-final
+% =====================================================================
+\documentclass[rascunho]{macroentrega}
+
+\setlogos{LOGO/itec_logo.png,LOGO/furg_logo.png,LOGO/embrapii_logo.png}
+
+\dadosrelatorio{
+  tipo              = final,
+  projeto           = \ph{NOME DO PROJETO},
+  codigo            = \ph{número no contrato e no Sisproj},
+  subtitulo         = \ph{Primeira linha do subtítulo}\\\ph{segunda linha equilibrada},
+  periodo           = \ph{mm/aaaa a mm/aaaa (n meses)},
+  deliverable       = \ph{DN},
+  parceiro          = \ph{razão social do parceiro tecnológico},
+  unidade           = {Unidade EMBRAPII iTec/FURG},
+  local             = \ph{Cidade},
+  data              = \ph{Mês de AAAA},
+  % confidencialidade = {CONFIDENCIAL},
+  % codigorelatorio   = {SIGLA-RF-AAAA-NN},
+  coordenador       = \ph{Nome do Coordenador},
+  razaosocial       = \ph{RAZÃO SOCIAL},
+  representante     = \ph{Nome do Representante},
+  cargorepresentante= \ph{Cargo},
+  dataassinatura    = \ph{DD de mês de AAAA},
+}
+
+\begin{document}
+
+\capa
+\include{capitulos_final/05_equipe}
+\include{capitulos/00_resumo}
+\tableofcontents
+
+% Em documento longo, as três listas abaixo se pagam.
+\listoffigures
+\listoftables
+\begin{siglas}
+  \item[\ph{SIGLA}] \ph{Significado, na forma por extenso.}
+\end{siglas}
+
+\include{capitulos_final/10_introducao}
+\include{capitulos_final/15_objetivos}
+\include{capitulos_final/20_metodologia_geral}
+\include{capitulos_final/25_requisitos}
+\include{capitulos_final/30_pacote_trabalho}
+% Um capítulo por pacote de trabalho: copie 30_pacote_trabalho.tex.
+% \include{capitulos_final/35_pacote_trabalho_2}
+\include{capitulos_final/50_conclusao_trabalhos_futuros}
+
+\referencias{referencias}
+
+\appendix
+\include{capitulos_final/90_anexos}
+
+\paginaassinaturas
+
+\end{document}

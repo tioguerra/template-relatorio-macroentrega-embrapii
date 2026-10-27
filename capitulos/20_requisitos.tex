@@ -1,0 +1,42 @@
+\chapter{Requisitos do Projeto}
+\label{chap:requisitos}
+
+\orientacao{Capítulo obrigatório na primeira macroentrega, que estabelece a lista completa, e atualizado em todas as seguintes com uma coluna a mais. Derive os requisitos dos objetivos e da metodologia do plano de trabalho, separe funcionais de não funcionais e dê um identificador único a cada um.
+
+A coluna \textbf{Verificação} impede que a tabela vire declaração. Nas linhas \parc{} e \done{}, informe o método (ensaio, inspeção, análise ou demonstração) e o ponteiro para a evidência no relatório (Tab.~4.2, Fig.~5.1, Anexo~A). \done{} significa concluído e verificado. Requisito derivado ou alterado depois da primeira entrega entra na tabela com o registro da mudança, e a tabela nunca some entre uma entrega e outra.
+
+Na primeira macroentrega, use uma única coluna, \texttt{\{M01\}}, e troque a seção de evolução por um parágrafo de leitura da linha de base. A lista de requisitos da primeira macroentrega é o instrumento que mede o projeto inteiro.
+
+Para ajustar as colunas, edite o argumento de \texttt{tabelarequisitos}, por exemplo \texttt{\{M01,M02,M03\}}. Cada linha usa \texttt{\textbackslash req\{ID\}\{descrição\}\{status por coluna\}\{verificação\}}.}
+
+Este capítulo apresenta os requisitos do projeto \ph{NOME DO PROJETO} atualizados para a Macroentrega~\numeromacroentrega, que definem as capacidades, as restrições e os atributos de qualidade que o sistema deve satisfazer ao longo do desenvolvimento. Os requisitos foram derivados dos objetivos e da metodologia do plano de trabalho e estão organizados em funcionais, que descrevem o que o sistema deve ser capaz de fazer, e não funcionais, que definem como ele deve operar. Cada requisito tem identificador único, descrição, status em cada macroentrega e a verificação que sustenta o status.
+
+O status é indicado pelas seguintes siglas: \todo{} (não iniciado), \wip{} (em andamento), \parc{} (parcialmente implementado) e \done{} (concluído e verificado).
+
+\section{Requisitos Funcionais}
+\label{sec:req_funcionais}
+
+\subsection{\ph{Área de competência} (RF-XXX)}
+
+\begin{tabelarequisitos}{M01,M02}
+\req{RF-XXX-01}{\ph{O sistema deve ser capaz de ..., em condição observável.}}{\todo & \wip}{}
+\req{RF-XXX-02}{\ph{O sistema deve ..., com valor e unidade quando houver meta numérica.}}{\wip & \done}{Ensaio, Fig.~\ref{fig:exemplo}}
+\req{RF-XXX-03}{\ph{O sistema deve ..., verificável por inspeção ou análise.}}{\parc & \parc}{Análise, Tab.~\ref{tab:exemplo}}
+\end{tabelarequisitos}
+
+\section{Requisitos Não Funcionais}
+\label{sec:req_nao_funcionais}
+
+\subsection{\ph{Atributo de qualidade} (RNF-XXX)}
+
+\begin{tabelarequisitos}{M01,M02}
+\req{RNF-XXX-01}{\ph{O sistema deve atender ..., com limite e condição de medida.}}{\todo & \todo}{}
+\req{RNF-XXX-02}{\ph{O software deve ser versionado em repositório com documentação de interfaces.}}{\wip & \wip}{}
+\end{tabelarequisitos}
+
+\section{Evolução dos Requisitos}
+\label{sec:evolucao_requisitos}
+
+\orientacao{Leitura em prosa da tabela, com contagens verificáveis na própria tabela, nunca estimativas: quantos requisitos mudaram de status, onde o avanço se concentrou, o que permanece \todo{} e por qual dependência. O comando \texttt{make verificar} imprime a contagem por status e por coluna. Na primeira macroentrega, esta seção vira um parágrafo de leitura da linha de base.}
+
+Dos \ph{N} requisitos definidos para o projeto, \ph{N} tiveram o status alterado entre a Macroentrega~\ph{NN-1} e a Macroentrega~\numeromacroentrega, e \ph{N} estão concluídos e verificados. O avanço concentrou-se em \ph{áreas ou identificadores}. Os requisitos ainda não iniciados vinculam-se a \ph{área}, cuja execução depende de \ph{dependência técnica}.

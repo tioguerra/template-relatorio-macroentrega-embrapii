@@ -1,0 +1,22 @@
+# Arquivos gerados pela compilação
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.run.xml
+*.bcf
+_verificacao/
+main-entrega.*
+main-final-entrega.*
+.DS_Store
+
+# O PDF de exemplo fica em docs/; os da raiz são gerados
+/main.pdf
+/main-final.pdf
